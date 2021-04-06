@@ -1,6 +1,6 @@
 const inquirer = require("inquirer");
 const generateMarkdown = require("./generate-markdown.js");
-const generateReadme = require("./generate-readme.js")
+const writeReadme = require("./generate-readme.js")
 
 const questions = [
     {
@@ -110,11 +110,14 @@ const questions = [
     }
 ];
 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
-
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+    inquirer.prompt(questions)
+        .then(readmeData => generateMarkdown(readmeData))
+        .then(readmeText => writeReadme(readmeText))
+        .then(writeReadmeResponse => console.log(writeReadmeResponse))
+        .catch(err => console.log(err))
+}
 
 // Function call to initialize app
 init();
