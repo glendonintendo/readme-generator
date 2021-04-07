@@ -9,7 +9,9 @@
 ## Description
 The README Generator takes is run entirely through a command line interface. Upon execution of the index.js file, the user is prompted to enter information regarding their readme file. After getting the input information, my program formats the data and generates a professional readme.
 ## Intallation and Usage
+This program uses Inquirer, a node package that makes . To use this application Inquirer must first be installed. Use the command `npm i` in the command line while in the project root directory to install Inquirer.
 ## Demo
+A video demo of my project can be found [here](https://youtu.be/gMK-CIRVNpI).
 ## Submission Requirements
 ### User Story
 ```
