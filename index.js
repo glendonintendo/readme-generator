@@ -46,7 +46,7 @@ const questions = [
         type: "input",
         name: "installationCommands",
         message: "What commands can the user input to download the required dependencies for your application?",
-        default: "npm init"
+        default: "npm i"
     },
     {
         type: "input",
