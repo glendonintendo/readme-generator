@@ -32,7 +32,7 @@ const questions = [
     {
         type: "input",
         name: "installation",
-        message: "What are the installation requirements of your project (required)?",
+        message: "What are the installation requirements for your project (required)?",
         validate: instructionsInput => {
             if (instructionsInput) {
                 return true;
@@ -41,6 +41,12 @@ const questions = [
                 return false;
             }
         }
+    },
+    {
+        type: "input",
+        name: "installationCommands",
+        message: "What commands can the user input to download the required dependencies for your application?",
+        default: "npm init"
     },
     {
         type: "input",
@@ -81,6 +87,12 @@ const questions = [
                 return false;
             }
         }
+    },
+    {
+        type: "input",
+        name: "testCommands",
+        message: "What commands can the user input to run tests on your application?",
+        default: "node test.js"
     },
     {
         type: "input",
