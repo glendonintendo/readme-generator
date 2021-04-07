@@ -41,14 +41,24 @@ ${data.description}
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
+- [Testing](#testing)
 - [Questions](#questions)
 ${(data.license !== "No License") ? "- [License](#license)" : ""}
 ## Installation
 ${data.installation}
+To install the necessary dependencies for this application, run the following commands in your command line while in the project root directory:  
+\`\`\`
+${data.installationCommands}
+\`\`\`
 ## Usage
 ${data.usage}
 ## Contributing
 ${data.contributing}
+## Testing
+To run the test suite for this application, run the following commands in your command line while in the project root directory:  
+\`\`\`
+${data.testCommands}
+\`\`\`
 ## Questions
 [My GitHub Site](https://www.github.com/${data.username})\\
 If you have any additional questions or concerns, please contact me by email at <${data.email}>.
